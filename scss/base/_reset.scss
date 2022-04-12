@@ -1,9 +1,0 @@
-section, footer {
-    padding: 20px;
-    @include tablet-only() {
-     padding: 20px 100px;   
-    }
-    @include desktop-only() {
-        padding: 30px 150px;
-    }
-}
