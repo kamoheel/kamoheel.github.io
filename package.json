@@ -1,0 +1,22 @@
+{
+  "name": "ch-p3-ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./scss/main.scss:css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamoheel/ch-p3-ohmyfood.git"
+  },
+  "author": "CH",
+  "license": "ISC",
+  "browserslist":"last 4 versions",
+  "bugs": {
+    "url": "https://github.com/kamoheel/ch-p3-ohmyfood/issues"
+  },
+  "homepage": "https://github.com/kamoheel/ch-p3-ohmyfood#readme"
+}

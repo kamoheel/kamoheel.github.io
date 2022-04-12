@@ -1,0 +1,38 @@
+.header {
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    @include tablet-only(){
+        height: 100px;
+    }
+    @include desktop-only(){
+        height: 120px;
+    }
+    &__img {
+        width: 185px;
+        margin: auto;
+        position: relative;
+        @include desktop-only(){
+            width: 250px;
+        }
+    }
+    & i {
+        position: absolute;
+        left: 0px;
+        top: 30px;
+        font-size: 18px;
+        padding-left: 20px;
+        @include tablet-only(){
+            font-size: 22px;
+            left: 30px;
+            top: 45px;
+        }
+        @include desktop-only(){
+            font-size: 25px;
+            top: 50px;
+            left: 70px;
+        }
+    }
+}

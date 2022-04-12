@@ -1,0 +1,86 @@
+.howto {
+    background-color: white;
+    height: 440px;
+    @include tablet-desktop(){
+        height: auto;
+    }
+    &__list {
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        @include tablet-desktop() {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__item {
+        width: 95%;
+        height: 74px;
+        border-radius: 20px;
+        box-shadow: map-get($shadow, shadow-base);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color:$color-bg;
+        &:hover {
+            background-color: $color-primary-light;
+            i {
+                color: $color-primary;
+            }
+        }
+        @include tablet-desktop() {
+            width: 30%;
+            height: 75%;
+            padding: 0 45px 20px 45px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-self:center;
+        }
+    }
+    &__nb {
+        font-size: 14px;
+        color: white;
+        background-color: $color-primary;
+        padding: 5px 8.5px 4px 8px;
+        border-radius: 100%;
+        position: relative;
+        left: -12px;
+        @include tablet-desktop() {
+            font-size: 20px;
+            padding: 5px 10px 4px 10px;
+            left: 0;
+            top: -12px;
+        }
+    }
+    & i {
+        font-size:large;
+        color: #7e7e7e;
+        padding-left: 10px;
+        @include tablet-desktop() {
+            margin-top: 20px;
+            font-size: 22px;
+            padding-left: 0;
+        }
+    }
+    &__txt {
+        font-weight: 500;
+        font-size: 17px;
+        padding-left: 20px;
+        @include tablet-desktop() {
+            text-align: center;
+            margin-top: 20px;
+            padding-left: 0;
+        }
+        @include tablet-only() {
+            margin-bottom: 45px;
+            font-size: 18px;
+        }
+        @include desktop-only() {
+            margin-bottom: 30px;
+            font-size: 17px;
+        }
+    }
+}

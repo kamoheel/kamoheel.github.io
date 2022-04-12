@@ -1,0 +1,26 @@
+.explore {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $color-bg;
+    height: 287px;
+    @include tablet-desktop() {
+        height: 250px;
+    }
+    &__heading {
+        padding: 0 30px;
+        margin-bottom: 0;
+    }
+    &__p {
+        color: #353535;
+        font-weight: 300;
+    }
+    &__btn {
+        margin-top: 25px;
+        & a {
+            @include btn;
+        }
+    }
+}
